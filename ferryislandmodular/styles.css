@@ -1,0 +1,108 @@
+/* COMMON */
+    html {background: #000;}
+    body * {color: #fff; font-family: 'Pangram', sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.68em;}
+    body {background: #000; min-width: 320px;}
+    main, nav, section, article {margin: 0 auto; max-width: 44rem; width: 80vw;}
+    
+/* HEADER */
+    header {width: 100%; background: url('assets/images/four-seas-detail-top.jpg') center top no-repeat; background-size: cover; background-attachment: fixed; padding: 1rem 0;}
+    header section {margin: 0 auto;}
+    header section#intro {padding: 6rem 0;}
+    header a img {width: 60vw; max-width: 350px; margin: 0; padding: 0; display: block;}
+    header a#logo:hover {border: none;}
+    header section#topbar {display: flex; justify-content: space-between; max-width: 44rem; width 80vw; padding: 2rem 0;}
+    header section#topbar a {align-self: center; margin: 0; padding: 0;}
+    a#support {text-align: right;}
+
+/* TYPOGRAPHY */
+    @font-face {font-family: "Pangram"; src: url("assets/images/Pangram-Regular.otf") format("opentype"); font-weight: 400; font-style: normal;}
+    @font-face {font-family: "Pangram"; src: url("assets/images/Pangram-Bold.otf") format("opentype"); font-weight: 600; font-style: normal;}
+    @font-face {font-family: "Pangram"; src: url("assets/images/Pangram-Black.otf") format("opentype"); font-weight: 800; font-style: normal;}
+    h1 {font-size: 2rem; font-weight: 600; margin: 0 0 3rem 0; color: #fff; line-height: 1.44em;}
+    h2 {font-size: 1.5rem; font-weight: 600; color: #fff; margin: 3rem 0;}
+    h3 {font-size: 1rem; font-weight: 600; color: #fff;}
+    h4 {font-size: 0.75; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 0.2rem; margin: 0.5rem 0;}
+    h5 {font-size: 1rem; font-weight: 600; color: #fff;}
+    p {font-weight: 400; line-height: 1.68rem; max-width: 44rem;}
+    p a, a:link, a:visited {font-weight: 600; color: #d6a62c; text-decoration: none; font-size: inherit;}
+    a:hover {border-bottom: 1px dashed #d6a62c;}
+
+/* NAVIGATION */
+    #navbar-back {display: flex; width: 100%; margin: 0 0 3rem 0; flex-direction: row;}
+    #navbar-back p {flex: 25%;}
+    #navbar-back h3 {flex: 50%; text-align: center;}
+
+/* MISC */
+    ul, li {margin: 0; padding: 0; list-style: none;}
+    em {font-style: italic; color: #777;}
+    p a:hover {border-bottom: 1px dashed #d6a62c; width: 100%;}
+    p a.selected {color: #555;}
+
+/* PRODUCT */
+    main section.product {margin: 0 0 3rem 0;}
+    main section.product img {width: 100%;}
+    section.product {display: flex; flex-direction: row; width: 100%; gap: 3rem; padding: 3rem; background: #111 url('assets/images/laru-map.png') no-repeat center; background-size: cover;}
+        @media (max-width: 800px) {section.product {flex-direction: column; flex: 100%;}}
+    section.product div.product-image {flex: 66%; align-self: center;filter: drop-shadow(2px 4px 16px #000);}
+    section.product div.product-details {align-self: center; width: 33%;}
+        @media (max-width: 800px) {section.product div.product-details {width: 100%;}}
+    div.product-image a:hover {border: none;}
+    h3.product-name {font-size: 2rem; margin: 0 0 1rem 0;}
+    h3.product-name a {color: #d6a62c; text-decoration: none; font-size: 2rem; font-weight: 600;}
+    h3.product-name a:hover {border-bottom: 1px dashed #d6a62c;}
+    p.product-price {font-size: 2rem; margin: 0 0 1rem 0; color: #d6a62c; font-weight: 800;}
+    p.product-fees, p.product-fees a {font-size: 0.75rem; line-height: 1.44; color: #888;}
+
+/* PRODUCT PAGE */
+    main#product-page section#intro {padding: 3rem 0;}
+    main#product-page section#intro h1 {font-size: 3rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5rem; margin-bottom: 0; color: #d6a62c;}
+    main#product-page section#intro h1, #product-page section#intro p {text-align: center; margin: 0 auto 1rem 0;} 
+    main#product-page section.price-and-buy {display: flex !important; flex-direction: row;}
+    main#product-page section.price-and-buy div {flex: 50%;}
+    main#product-page section.price-and-buy div p {width: fit-content;}
+    section.product-information {display: flex; gap: 2rem; flex-direction: row;}
+        @media (max-width: 800px) {section.product-information {flex-direction: column; gap: 0;}}
+    section.product-information > p, section.product-information > section {flex: 50%;}
+    #product-page h2 {margin: 2rem 0 1rem 0; width: 100%; text-align: center; color:#d6a62c}
+    p span {color: #888;}
+    section.tech-specs-and-downloads {border: 1px solid #d6a62c; padding: 2rem; margin: 3rem 0;}
+    section.product-information img {width:50%; height: auto;}
+
+/* CONTENT PAGES */
+    section.information {display: flex; gap: 2rem; flex-direction: row;}
+        @media (max-width: 800px) {section.product-information {flex-direction: column; gap: 0;}}
+    section.product-information > p, section.product-information > section {flex: 50%;}
+    main#content-page section#intro {padding: 3rem 0;}
+    main#content-page section#intro h1 {font-size: 3rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5rem; margin-bottom: 0; color: #d6a62c;}
+    main#content-page section#intro h1, #content-page section#intro p {text-align: center; margin: 0 auto 1rem 0;}
+    section#intro p {font-size: 1.25rem; line-height: 1.68;} 
+    main#content-page section.price-and-buy {display: flex !important; flex-direction: row;}
+    main#content-page section.price-and-buy div {flex: 50%;}
+    main#content-page section.price-and-buy div p {width: fit-content;}
+    #content-page h2 {margin: 3rem 0 1rem 0; text-align: left; width: 100%; color:#fff}
+    main#content-page section img {width:100%; height: auto;}
+
+/* MAIN CONTENT */
+    main {padding: 3rem 0;}
+
+/* NEWSLETTER */
+    section.newsletter {width: 100%; padding: 3rem; background: #111 url('assets/images/laru-map.png') no-repeat center; background-size: cover;}
+    form {display: flex; flex-direction: row; gap: 1rem; margin-top: 1rem;}
+        @media (max-width: 600px) {form {flex-direction: column;}}
+    input[type="email"] {flex: auto; padding: 1rem;}
+    form button {padding: 1rem 3rem; background: #d6a62c; color: #000; border: none; font-weight: 600; cursor: pointer; border-radius: 4px; color: #fff;}
+    section.newsletter p {margin: 0 0 1rem 0;}
+
+/* CONTACT */
+    section.contact {width: 100%; padding: 3rem; background: #111 url('assets/images/laru-map.png') no-repeat center; background-size: cover;}
+    form {display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;}
+    input[type="email"] {flex: auto; padding: 1rem;}
+    textarea {height: 12rem; padding: 1rem;}
+    form button {padding: 1rem 3rem; background: #d6a62c; color: #000; border: none; font-weight: 600; cursor: pointer; border-radius: 4px; color: #fff;}
+    section.contact p {margin: 0 0 1rem 0;}
+
+/* FOOTER */
+    footer {width: 100%; background: url('assets/images/four-seas-detail-bottom.jpg') center top no-repeat; background-size: cover; background-attachment: fixed; padding: 3rem 0;}
+    footer section {flex-direction: row; display: flex; margin: 0 auto; max-width: 44rem; width 80vw;}
+        @media (max-width: 600px) {footer section {flex-direction: column; flex: 100%;}}
+    footer section ul {flex: 33%; margin: 0 0 1rem 0;}
